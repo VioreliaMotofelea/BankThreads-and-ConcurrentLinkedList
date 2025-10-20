@@ -1,0 +1,14 @@
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\bin\Debug\net8.0\ConcurrentLinkedList.exe
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\bin\Debug\net8.0\ConcurrentLinkedList.deps.json
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\bin\Debug\net8.0\ConcurrentLinkedList.runtimeconfig.json
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\bin\Debug\net8.0\ConcurrentLinkedList.dll
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\bin\Debug\net8.0\ConcurrentLinkedList.pdb
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ConcurrentLinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ConcurrentLinkedList.AssemblyInfoInputs.cache
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ConcurrentLinkedList.AssemblyInfo.cs
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ConcurrentLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ConcurrentLinkedList.dll
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\refint\ConcurrentLinkedList.dll
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ConcurrentLinkedList.pdb
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ConcurrentLinkedList.genruntimeconfig.cache
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\ConcurrentLinkedList\obj\Debug\net8.0\ref\ConcurrentLinkedList.dll

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankThreads", "BankThreads\BankThreads.csproj", "{403942D3-FC32-4D62-8EEF-F7C7E01E354F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentLinkedList", "ConcurrentLinkedList\ConcurrentLinkedList.csproj", "{0751D417-B49B-4C15-A889-20D6E9323D1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{403942D3-FC32-4D62-8EEF-F7C7E01E354F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403942D3-FC32-4D62-8EEF-F7C7E01E354F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403942D3-FC32-4D62-8EEF-F7C7E01E354F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403942D3-FC32-4D62-8EEF-F7C7E01E354F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0751D417-B49B-4C15-A889-20D6E9323D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0751D417-B49B-4C15-A889-20D6E9323D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0751D417-B49B-4C15-A889-20D6E9323D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0751D417-B49B-4C15-A889-20D6E9323D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

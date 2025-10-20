@@ -1,0 +1,14 @@
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\bin\Debug\net8.0\BankThreads.exe
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\bin\Debug\net8.0\BankThreads.deps.json
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\bin\Debug\net8.0\BankThreads.runtimeconfig.json
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\bin\Debug\net8.0\BankThreads.dll
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\bin\Debug\net8.0\BankThreads.pdb
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\BankThreads.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\BankThreads.AssemblyInfoInputs.cache
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\BankThreads.AssemblyInfo.cs
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\BankThreads.csproj.CoreCompileInputs.cache
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\BankThreads.dll
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\refint\BankThreads.dll
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\BankThreads.pdb
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\BankThreads.genruntimeconfig.cache
+C:\Users\viore\OneDrive\Desktop\an3-sem1\pdp\BankThreads\BankThreads\obj\Debug\net8.0\ref\BankThreads.dll
