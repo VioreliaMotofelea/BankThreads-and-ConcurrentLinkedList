@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentLinkedList", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsumer", "ProducerConsumer\ProducerConsumer.csproj", "{6FE9CCF4-7665-4855-B9D8-3ECF199EFE7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixThreads", "MatrixThreads\MatrixThreads.csproj", "{548E6C7B-36CF-4611-9C35-3B4742638404}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{6FE9CCF4-7665-4855-B9D8-3ECF199EFE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FE9CCF4-7665-4855-B9D8-3ECF199EFE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FE9CCF4-7665-4855-B9D8-3ECF199EFE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{548E6C7B-36CF-4611-9C35-3B4742638404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548E6C7B-36CF-4611-9C35-3B4742638404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548E6C7B-36CF-4611-9C35-3B4742638404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548E6C7B-36CF-4611-9C35-3B4742638404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
