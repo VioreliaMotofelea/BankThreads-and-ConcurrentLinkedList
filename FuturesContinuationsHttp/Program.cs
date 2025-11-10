@@ -34,7 +34,7 @@ class Program
                     var d = new CallbackDownloader(u, () => cde.Signal());
                     d.Start();
                 }
-                cde.Wait(); // Wait ONLY in Main
+                cde.Wait();
                 break;
 
             case Mode.Tasks:
@@ -47,6 +47,7 @@ class Program
         }
 
         Console.WriteLine("All downloads complete.");
+        Console.WriteLine();
         return 0;
     }
 
@@ -66,15 +67,8 @@ class Program
 
 
 /*
-   dotnet run --project FuturesContinuationsHttp -- -mode callbacks http://example.com/
-   dotnet run --project FuturesContinuationsHttp -- -mode tasks http://www.cnatdcu.ro/documente-utile/
-   dotnet run --project FuturesContinuationsHttp -- -mode await http://example.com/ http://www.cnatdcu.ro/
-
-   dotnet run --project FuturesContinuationsHttp -- -mode await http://httpbin.org/bytes/1024
-   dotnet run --project FuturesContinuationsHttp -- -mode await http://example.com/ http://httpbin.org/bytes/2048 http://httpbin.org/bytes/4096
-   
-   dotnet run --project FuturesContinuationsHttp -- -mode callbacks http://info.cern.ch/
-   dotnet run --project FuturesContinuationsHttp -- -mode callbacks http://httpbin.org/bytes/1024
-   dotnet run --project FuturesContinuationsHttp -- -mode callbacks http://www.neverssl.com/
+   dotnet run --project FuturesContinuationsHttp -- -mode callbacks http://info.cern.ch/ http://www.cnatdcu.ro/ http://example.com/
+   dotnet run --project FuturesContinuationsHttp -- -mode tasks http://info.cern.ch/ http://www.cnatdcu.ro/ http://example.com/
+   dotnet run --project FuturesContinuationsHttp -- -mode await http://info.cern.ch/ http://www.cnatdcu.ro/ http://example.com/
    
  */

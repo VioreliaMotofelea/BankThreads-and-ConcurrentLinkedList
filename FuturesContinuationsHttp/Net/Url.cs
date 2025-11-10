@@ -1,7 +1,6 @@
 namespace FuturesContinuationsHttp.Net;
 
-// tiny http://host[:port]/path parser
-// URL parsing
+// URL parsing http://host[:port]/path parser
 public sealed class Url
 {
     public string Host { get; }

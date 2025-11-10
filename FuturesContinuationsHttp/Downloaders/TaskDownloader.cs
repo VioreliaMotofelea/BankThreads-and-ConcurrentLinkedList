@@ -44,7 +44,7 @@ public static class TaskDownloader
                         parser.BodyBytesAlreadyBuffered = 0;
                         if (total >= parser.ContentLength) { tcs.SetResult(0); return; }
                     }
-                    Loop(); // continue the chain
+                    Loop();
                 });
             }
             Loop();

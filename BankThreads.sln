@@ -10,8 +10,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixThreads", "MatrixThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuturesContinuationsHttp", "FuturesContinuationsHttp\FuturesContinuationsHttp.csproj", "{C698209C-598E-4836-A167-8051A8B8ADE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4Http", "Lab4Http\Lab4Http.csproj", "{2D9F6BF8-6DD9-4897-BD2D-86A0616FDF12}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,9 +36,5 @@ Global
 		{C698209C-598E-4836-A167-8051A8B8ADE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C698209C-598E-4836-A167-8051A8B8ADE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C698209C-598E-4836-A167-8051A8B8ADE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D9F6BF8-6DD9-4897-BD2D-86A0616FDF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D9F6BF8-6DD9-4897-BD2D-86A0616FDF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D9F6BF8-6DD9-4897-BD2D-86A0616FDF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D9F6BF8-6DD9-4897-BD2D-86A0616FDF12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

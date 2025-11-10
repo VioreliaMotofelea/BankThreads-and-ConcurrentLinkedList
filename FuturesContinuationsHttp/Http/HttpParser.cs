@@ -2,15 +2,8 @@ using System.Text;
 
 namespace FuturesContinuationsHttp.Http;
 
-// reads headers, extracts Content-Length
-
 // Minimal HTTP/1.1 header parser: collects header lines,
-// finds Content-Length, and counts any body bytes already buffered.
-
-
-// HTTP mini-parser
-// Reads until \r\n\r\n, then parses headers and returns Content-Length (or -1 if missing).
-// Any extra bytes from the first receive that belong to the body are accounted for.
+// finds Content-Length, and counts any body bytes already buffered
 public sealed class HttpParser
 {
     private readonly StringBuilder _headers = new();
