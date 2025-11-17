@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixThreads", "MatrixThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuturesContinuationsHttp", "FuturesContinuationsHttp\FuturesContinuationsHttp.csproj", "{C698209C-598E-4836-A167-8051A8B8ADE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolynomialMultiplication", "PolynomialMultiplication\PolynomialMultiplication.csproj", "{3A6743EF-5BFF-4522-8FBE-869F0608C0C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{C698209C-598E-4836-A167-8051A8B8ADE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C698209C-598E-4836-A167-8051A8B8ADE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C698209C-598E-4836-A167-8051A8B8ADE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6743EF-5BFF-4522-8FBE-869F0608C0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6743EF-5BFF-4522-8FBE-869F0608C0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6743EF-5BFF-4522-8FBE-869F0608C0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6743EF-5BFF-4522-8FBE-869F0608C0C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
