@@ -2,19 +2,13 @@ using System;
 
 namespace PolynomialMultiplication.Algorithms;
 
-// 1. Karatsuba – sequential
-// 2. Karatsuba – parallel (parallelize only the top recursion levels, sized to your CPU)
-
 public static class Karatsuba
 {
-    // Public API – choose sequential or parallel by maxDepth (0 = sequential)
     public static long[] MultiplySeq(long[] a, long[] b, int baseCutoff = 64)
         => TrimTrailing(Rec(a, b, baseCutoff, maxDepth: 0, depth: 0));
 
     public static long[] MultiplyPar(long[] a, long[] b, int maxDepth, int baseCutoff = 64)
         => TrimTrailing(Rec(a, b, baseCutoff, maxDepth, depth: 0));
-
-    // ---- helpers ----
 
     static long[] Rec(long[] a, long[] b, int baseCutoff, int maxDepth, int depth)
     {
@@ -22,8 +16,7 @@ public static class Karatsuba
 
         if (n <= baseCutoff)
             return Naive.MultiplySeq(a, b);
-
-        // Pad both to same power-of-two length
+        
         int m = NextPow2(n);
         var aPad = Pad(a, m);
         var bPad = Pad(b, m);
@@ -39,7 +32,6 @@ public static class Karatsuba
 
         if (depth < maxDepth)
         {
-            // Parallelize the 3 Karatsuba multiplications at the top levels only
             var t0 = System.Threading.Tasks.Task.Run(() => Rec(a0, b0, baseCutoff, maxDepth, depth + 1));
             var t2 = System.Threading.Tasks.Task.Run(() => Rec(a1, b1, baseCutoff, maxDepth, depth + 1));
 
@@ -59,8 +51,6 @@ public static class Karatsuba
             z1 = Rec(sA, sB, baseCutoff, maxDepth, depth + 1);
         }
 
-        // Karatsuba combine:
-        // (a0 + a1)(b0 + b1) = z1 = z0 + z2 + middle
         var middle = Subtract(Subtract(z1, z0), z2);
 
         var res = new long[2 * m];
@@ -136,15 +126,3 @@ public static class Karatsuba
         return t;
     }
 }
-
-/*
- * For Karatsuba, no shared writes happen: each recursive call builds its own local result and the combining step runs in the parent thread.
- * Therefore no locks are needed. Concurrency happens only at the top recursion levels (controlled by maxDepth) to match the number of threads/cores.
-   
-   How deep to parallelize (tree height):
-   At each node you spawn 3 child multiplications: so the number of parallel tasks at depth d is 3^d. If you have P cores/threads to use, pick
-   
-        maxDepth = floor( log_base_3(P) )
-
-   so you don’t oversubscribe. (This matches the right-side tree in your photo.)
- */

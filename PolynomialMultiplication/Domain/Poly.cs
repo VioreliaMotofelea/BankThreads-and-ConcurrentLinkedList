@@ -5,7 +5,6 @@ namespace PolynomialMultiplication.Domain;
 
 public static class Poly
 {
-    // Random long coefficients in [-max, max]
     public static long[] Random(int degreePlus1, int seed = 42, int maxAbs = 1000)
     {
         var r = new Random(seed);
@@ -15,7 +14,6 @@ public static class Poly
         return a;
     }
 
-    // Trim trailing zeros for nicer equality/printing
     public static long[] Trim(long[] c)
     {
         int i = c.Length - 1;
