@@ -10,6 +10,8 @@ public sealed class DsmNode
 
     private readonly Dictionary<string, DsmVariable> _vars = new();
     private readonly Dictionary<string, List<int>> _subscribers = new();
+    private readonly Dictionary<string, long> _nextExpectedSequence = new();
+    private readonly Dictionary<string, SortedDictionary<long, DsmMessage>> _messageBuffer = new();
 
     public DsmNode(int id)
     {
@@ -22,6 +24,8 @@ public sealed class DsmNode
         int sequencer = subscribers.Min();
         _vars[variable] = new DsmVariable(sequencer);
         _subscribers[variable] = subscribers;
+        _nextExpectedSequence[variable] = 0;
+        _messageBuffer[variable] = new SortedDictionary<long, DsmMessage>();
     }
 
     public void Write(string variable, int value)
@@ -78,8 +82,44 @@ public sealed class DsmNode
         }
         else if (msg.Type == MsgType.UpdateBroadcast)
         {
+            ProcessOrderedUpdate(msg);
+        }
+    }
+
+    private void ProcessOrderedUpdate(DsmMessage msg)
+    {
+        string variable = msg.Variable;
+        long expectedSeq = _nextExpectedSequence[variable];
+        
+        if (msg.Sequence == expectedSeq)
+        {
+            var v = _vars[variable];
             v.Value = msg.Value;
-            OnVariableChanged?.Invoke(msg.Variable, msg.Value);
+            _nextExpectedSequence[variable] = expectedSeq + 1;
+            OnVariableChanged?.Invoke(variable, msg.Value);
+            
+            ProcessBufferedMessages(variable);
+        }
+        else if (msg.Sequence > expectedSeq)
+        {
+            _messageBuffer[variable][msg.Sequence] = msg;
+        }
+    }
+
+    private void ProcessBufferedMessages(string variable)
+    {
+        var buffer = _messageBuffer[variable];
+        long expectedSeq = _nextExpectedSequence[variable];
+        
+        while (buffer.TryGetValue(expectedSeq, out var msg))
+        {
+            buffer.Remove(expectedSeq);
+            var v = _vars[variable];
+            v.Value = msg.Value;
+            _nextExpectedSequence[variable] = expectedSeq + 1;
+            OnVariableChanged?.Invoke(variable, msg.Value);
+            
+            expectedSeq++;
         }
     }
 }
